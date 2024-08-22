@@ -1,0 +1,293 @@
+//Code by: Gaborcvs
+const int A = 13;
+const int B = 12;
+const int C = 11;
+const int D = 10;
+const int E = 9;
+const int F = 8;
+const int G = 7;
+const int AA = 6;
+const int BB = 5;
+const int CC = 4;
+const int DD = 3;
+const int EE = 2;
+const int FF = 1;
+const int GG = A0;
+const int L1 = A1;
+const int L2 = A2;
+const int L3 = A3;
+int Delay = 500;
+
+
+void setup() {
+  pinMode(A, OUTPUT);
+  pinMode(B, OUTPUT);
+  pinMode(C, OUTPUT);
+  pinMode(D, OUTPUT);
+  pinMode(E, OUTPUT);
+  pinMode(F, OUTPUT);
+  pinMode(G, OUTPUT);
+  pinMode(AA, OUTPUT);
+  pinMode(BB, OUTPUT);
+  pinMode(CC, OUTPUT);
+  pinMode(DD, OUTPUT);
+  pinMode(EE, OUTPUT);
+  pinMode(FF, OUTPUT);
+  pinMode(GG, OUTPUT);
+  pinMode(L1, OUTPUT);
+  pinMode(L2, OUTPUT);
+  pinMode(L3, OUTPUT);
+}
+
+void loop() {
+ 
+  digitalWrite(L3, HIGH); //Turn on Red r 25Secs
+ 
+  //2
+  two2();
+  five();
+  delay(Delay);
+  four();
+  delay(Delay);
+  three();
+  delay(Delay);
+  two();
+  delay(Delay);
+  one();
+  delay(Delay);
+  zero();
+  delay(Delay);
+ 
+  //19-10
+  one1();
+  nine();
+  delay(Delay);
+  eight();
+  delay(Delay);
+  seven();
+  delay(Delay);
+  six();
+  delay(Delay);
+  five();
+  delay(Delay);
+  four();
+  delay(Delay);
+  three();
+  delay(Delay);
+  two();
+  delay(Delay);
+  one();
+  delay(Delay);
+  zero();
+  delay(Delay);
+ 
+  //09-00
+  wala();
+  nine();
+  delay(Delay);
+  eight();
+  delay(Delay);
+  seven();
+  delay(Delay);
+  six();
+  delay(Delay);
+  five();
+  delay(Delay);
+  four();
+  delay(Delay);
+  three();
+  delay(Delay);
+  two();
+  delay(Delay);
+  one();
+  delay(Delay);
+  zero();
+  delay(Delay);
+  digitalWrite(L3, LOW);  // Turn off the RED LED
+  
+  //Turn on Orange for 3Secs
+  digitalWrite(L2, HIGH);
+  three();
+  delay(Delay);
+  two();
+  delay(Delay);
+  one();
+  delay(Delay);
+  zero();
+  delay(Delay);
+  digitalWrite(L2, LOW);
+ 
+  //Turn on Green for 15Secs
+  digitalWrite(L1, HIGH);
+  one1();
+  five();
+  delay(Delay);
+  four();
+  delay(Delay);
+  three();
+  delay(Delay);
+  two();
+  delay(Delay);
+  one();
+  delay(Delay);
+  zero();
+  delay(Delay);
+  wala();
+  nine();
+  delay(Delay);
+  eight();
+  delay(Delay);
+  seven();
+  delay(Delay);
+  six();
+  delay(Delay);
+  five();
+  delay(Delay);
+  four();
+  delay(Delay);
+  three();
+  delay(Delay);
+  two();
+  delay(Delay);
+  one();
+  delay(Delay);
+  zero();
+  delay(Delay);
+  digitalWrite(L1, LOW);
+ 
+ 
+ 
+ 
+
+ 
+}
+
+void wala() {
+  digitalWrite(AA, HIGH);
+  digitalWrite(BB, HIGH);
+  digitalWrite(CC, HIGH);
+  digitalWrite(DD, HIGH);
+  digitalWrite(EE, HIGH);
+  digitalWrite(FF, HIGH);
+  digitalWrite(GG, LOW);
+}
+
+void nine() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+}
+
+void eight() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+}
+
+void seven() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+}
+
+void six() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+}
+
+void five() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, LOW);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+}
+
+void four() {  
+  digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+}
+
+void three() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, HIGH);
+}
+
+void two() {  
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, LOW);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, LOW);
+  digitalWrite(G, HIGH);
+}
+
+void one() {  
+  digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+}
+
+void zero() {
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, LOW);
+}
+
+void one1() {
+  digitalWrite(AA, LOW);
+  digitalWrite(BB, HIGH);
+  digitalWrite(CC, HIGH);
+  digitalWrite(DD, LOW);
+  digitalWrite(EE, LOW);
+  digitalWrite(FF, LOW);
+  digitalWrite(GG, LOW);
+}
+
+void two2() {  
+  digitalWrite(AA, HIGH);
+  digitalWrite(BB, HIGH);
+  digitalWrite(CC, LOW);
+  digitalWrite(DD, HIGH);
+  digitalWrite(EE, HIGH);
+  digitalWrite(FF, LOW);
+  digitalWrite(GG, HIGH);
+}
